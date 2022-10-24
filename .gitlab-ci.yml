@@ -1,0 +1,18 @@
+include: 'https://gitlab.gnome.org/GNOME/citemplates/raw/master/flatpak/flatpak_ci_initiative.yml'
+
+variables:
+    GIT_SUBMODULE_STRATEGY: recursive
+
+flatpak:
+    variables:
+        CONFIG_OPTS: "-Ddogtail=false -Dmanuals=true"
+        MANIFEST_PATH: "flatpak/org.gnome.Photos.json"
+        FLATPAK_MODULE: "gnome-photos"
+        APP_ID: "org.gnome.Photos"
+        RUNTIME_REPO: "https://nightly.gnome.org/gnome-nightly.flatpakrepo"
+        BUNDLE: "org.gnome.Photos.Devel.flatpak"
+    extends: .flatpak
+
+nightly:
+  extends: '.publish_nightly'
+  dependencies: ['flatpak']

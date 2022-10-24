@@ -1,0 +1,51 @@
+@define-color theme_base_color #333333;
+@define-color photos_collection_bg #000000;
+
+GdMainIconView.content-view {
+    -GdMainIconView-icon-size: 40;
+}
+
+/* Make spinner visible on both dark and bright backgrounds w/o making
+ * it look ugly/weird.
+ */
+GdMainIconView.content-view.cell:active {
+    color: gray;
+}
+
+.documents-counter {
+    background-image: url("dnd-counter.svg");
+    background-size: contain;
+    background-color: transparent;
+    color: @theme_base_color;
+    font-weight: bold;
+}
+
+.documents-scrolledwin.frame {
+    border-width: 1px 0 0;
+    border-radius: 0;
+}
+
+.photos-icon-bg {
+  -gtk-icon-shadow: 0 1px #000000;
+}
+
+.photos-fade-in {
+    opacity: 1.0;
+    transition: opacity 0.2s ease-out;
+}
+
+.photos-fade-out {
+    opacity: 0.0;
+    transition: opacity 0.2s ease-out;
+}
+
+.photos-collection-icon {
+    background-color: @photos_collection_bg;
+    border-radius: 8px;
+}
+
+button.photos-filter-preview:checked {
+    background: @theme_selected_bg_color;
+    color: @theme_selected_fg_color;
+    -gtk-icon-shadow: 0 3px 3px shade(@theme_selected_bg_color,0.7);
+}

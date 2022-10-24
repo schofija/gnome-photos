@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2013 – 2021 Red Hat, Inc. -->
+<component type="desktop">
+  <id>org.gnome.Photos.desktop</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-3.0+</project_license>
+  <name>Photos</name>
+  <summary>Access, organize and share your photos on GNOME</summary>
+  <description>
+    <p>
+      Access, organize and share your photos on GNOME. A simple and elegant
+      replacement for using a file manager to deal with photos. Enhance, crop
+      and edit in a snap. Seamless cloud integration is offered through GNOME
+      Online Accounts.
+    </p>
+    <p>You can:</p>
+    <ul>
+      <li>Automatically find all your pictures</li>
+      <li>View recent local and online photos</li>
+      <li>Access your Facebook or Flickr pictures</li>
+      <li>View photos on TVs, laptops or other DLNA renderers on your local
+          network</li>
+      <li>Set pictures as your desktop background</li>
+      <li>Print photos</li>
+      <li>Select favorites</li>
+      <li>Easily edit your pictures in the app, or send to a full featured
+          editor for more advanced changes</li>
+    </ul>
+  </description>
+  <kudos>
+    <kudo>AppMenu</kudo>
+    <kudo>HiDpiIcon</kudo>
+    <kudo>ModernToolkit</kudo>
+    <kudo>SearchProvider</kudo>
+    <kudo>UserDocs</kudo>
+  </kudos>
+  <releases>
+    <release version="43.0" date="2022-09-20"/>
+    <release version="42.0" date="2022-03-19">
+      <description>
+        <ul>
+          <li>Fix crash when importing photos from device</li>
+          <li>Fix headerbar getting too big</li>
+          <li>Translations updates</li>
+        </ul>
+      </description>
+    </release>
+    <release version="40.0" date="2021-03-25">
+      <description>
+        <ul>
+          <li>Port to Tracker 3</li>
+        </ul>
+      </description>
+    </release>
+    <release version="3.38.0" date="2020-09-23">
+      <description>
+        <ul>
+          <li>Add a new magic filter, Trencin, very similar to Instagram's
+              Clarendon filter</li>
+          <li>Switch to private instances of the Tracker 2.x daemons</li>
+        </ul>
+      </description>
+    </release>
+    <release version="3.34.0" date="2019-09-11">
+      <description>
+        <ul>
+          <li>Update the application icon to be more modern and colorful</li>
+        </ul>
+      </description>
+    </release>
+    <release version="3.32.0" date="2019-03-18">
+      <description>
+        <ul>
+          <li>Don't attempt to load items from non-UTF-8 paths</li>
+          <li>Remove the application menu</li>
+          <li>Start adding some unit tests</li>
+          <li>Update the application icon for the GNOME 3.32 icon redesign</li>
+        </ul>
+      </description>
+    </release>
+    <release version="3.30.0" date="2018-09-06">
+      <description>
+        <ul>
+          <li>Delete *.gnome-photos files with XML depicting an empty GEGL
+              graph</li>
+          <li>Launch Settings in a Flatpak-friendly way</li>
+          <li>Port to the Meson build system</li>
+          <li>Reduce memory fragmentation in ImageView</li>
+          <li>Unbreak the "Empty Trash" button on GNOME >= 3.24</li>
+        </ul>
+      </description>
+    </release>
+  </releases>
+  <screenshots>
+    <screenshot type="default">
+      <image type="source">https://gitlab.gnome.org/GNOME/gnome-photos/raw/HEAD/data/screenshots/photos.png</image>
+    </screenshot>
+    <screenshot>
+      <image type="source">https://gitlab.gnome.org/GNOME/gnome-photos/raw/HEAD/data/screenshots/crop.png</image>
+    </screenshot>
+    <screenshot>
+      <image type="source">https://gitlab.gnome.org/GNOME/gnome-photos/raw/HEAD/data/screenshots/filter.png</image>
+    </screenshot>
+  </screenshots>
+  <url type="bugtracker">https://gitlab.gnome.org/GNOME/gnome-photos/issues</url>
+  <url type="donation">http://www.gnome.org/friends</url>
+  <url type="homepage">https://wiki.gnome.org/Apps/Photos</url>
+  <url type="translate">https://wiki.gnome.org/TranslationProject</url>
+  <developer_name>The GNOME Project</developer_name>
+  <project_group>GNOME</project_group>
+  <update_contact>debarshir_at_gnome.org</update_contact>
+  <translation type="gettext">gnome-photos</translation>
+  <content_rating type="oars-1.1">
+    <content_attribute id="violence-cartoon">none</content_attribute>
+    <content_attribute id="violence-fantasy">none</content_attribute>
+    <content_attribute id="violence-realistic">none</content_attribute>
+    <content_attribute id="violence-bloodshed">none</content_attribute>
+    <content_attribute id="violence-sexual">none</content_attribute>
+    <content_attribute id="violence-desecration">none</content_attribute>
+    <content_attribute id="violence-slavery">none</content_attribute>
+    <content_attribute id="violence-worship">none</content_attribute>
+    <content_attribute id="drugs-alcohol">none</content_attribute>
+    <content_attribute id="drugs-narcotics">none</content_attribute>
+    <content_attribute id="drugs-tobacco">none</content_attribute>
+    <content_attribute id="sex-nudity">none</content_attribute>
+    <content_attribute id="sex-themes">none</content_attribute>
+    <content_attribute id="sex-homosexuality">none</content_attribute>
+    <content_attribute id="sex-prostitution">none</content_attribute>
+    <content_attribute id="sex-adultery">none</content_attribute>
+    <content_attribute id="sex-appearance">none</content_attribute>
+    <content_attribute id="language-profanity">none</content_attribute>
+    <content_attribute id="language-humor">none</content_attribute>
+    <content_attribute id="language-discrimination">none</content_attribute>
+    <content_attribute id="social-chat">none</content_attribute>
+    <content_attribute id="social-info">none</content_attribute>
+    <content_attribute id="social-audio">none</content_attribute>
+    <content_attribute id="social-location">none</content_attribute>
+    <content_attribute id="social-contacts">none</content_attribute>
+    <content_attribute id="money-purchasing">none</content_attribute>
+    <content_attribute id="money-gambling">none</content_attribute>
+  </content_rating>
+</component>

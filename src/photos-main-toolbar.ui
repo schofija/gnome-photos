@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ Photos - access, organize and share your photos on GNOME
+ Copyright © 2017 Alessandro Bono
+ Copyright © 2017 – 2021 Red Hat, Inc.
+
+ This program is free software: you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation, either version 3 of the License, or
+ (at your option) any later version.
+
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+
+ You should have received a copy of the GNU General Public License
+ along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<interface>
+  <template class="PhotosMainToolbar" parent="GtkBox">
+    <property name="orientation">GTK_ORIENTATION_VERTICAL</property>
+    <property name="visible">1</property>
+    <child>
+      <object class="HdyHeaderBar" id="header_bar">
+        <property name="visible">1</property>
+        <style>
+          <class name="titlebar"/>
+        </style>
+      </object>
+    </child>
+    <child>
+      <object class="PhotosOverviewSearchbar" id="searchbar"/>
+    </child>
+  </template>
+</interface>
