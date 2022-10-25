@@ -13,21 +13,21 @@ The internal architecture Photos is based on Documents -- the document
 manager application for GNOME, because they share similar UI/UX
 patterns and objectives.
 
-Points to remember while hacking on Photos:
+----
 
-+ Avoid unnecessary divergences from Documents. Valid exceptions
-  include changes needed to convert JavaScript idioms to their C
-  equivalents.
+Installation -
 
-+ Share the same set of widgets as Documents, or the other core GNOME
-  applications, as much as possible.
+A tutorial for installation and basic usage can be found here:
+https://docs.google.com/document/d/1bROllukeeZSd_Z8OobJtimZWnQ0zxZjHsORmFNdsb8I/edit?usp=sharing
 
-+ Monitor changes in the Documents code base and clone them when
-  relevant.
+Installing stable builds:
+$ flatpak remote-add --from flathub https://flathub.org/repo/flathub.flatpakrepo
+$ flatpak install flathub org.gnome.Photos
 
-+ Follow the GNU coding style. To accomodate longer class and method
-  names due to namespace prefixes, line lengths upto 120 characters
-  are allowed.
+Installing nightly builds:
+$ flatpak remote-add --from gnome-nightly https://sdk.gnome.org/gnome-nightly.flatpakrepo
+$ flatpak remote-add --from gnome-apps-nightly https://sdk.gnome.org/gnome-apps-nightly.flatpakrepo
+$ flatpak install gnome-apps-nightly org.gnome.Photos
 
 ----
 

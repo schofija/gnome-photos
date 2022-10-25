@@ -1,0 +1,35 @@
+Development in Photos is tracked using GNOME's GitLab instance. Search the bugtracker for any issues or feature requests you may have. Feel free to work on fixing any bug filed against Photos. 
+
+For debugging tips, please see https://wiki.gnome.org/Apps/Photos/Debugging
+
+----
+
+Guidelines to remember while contributing to Photos:
+
++ Avoid unnecessary divergences from Documents. Valid exceptions
+  include changes needed to convert JavaScript idioms to their C
+  equivalents.
+
++ Share the same set of widgets as Documents, or the other core GNOME
+  applications, as much as possible.
+
++ Monitor changes in the Documents code base and clone them when
+  relevant.
+
++ Follow the GNU coding style. To accomodate longer class and method
+  names due to namespace prefixes, line lengths upto 120 characters
+  are allowed.
+  
++ Adhere to the GNOME Code of Conduct when contributing
+  
+----
+
+Most contributors hang out in #photos on irc.gnome.org. 
+Contributors, users and developers are welcome to direct any questions about Photos there. 
+
+Photos development is currently lead by:
+	Allan Day (aday) Designer
+	Jakub Steiner (jimmac) Designer
+	Alessandro Bono (abono) Developer
+    Debarshi Ray (rishi) Creator and maintainer
+    Umang Jain (uajain) Developer 
